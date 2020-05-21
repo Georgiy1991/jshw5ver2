@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+<body>
+     <div class="container">
+        <div class="clock">
+            <span class="big">00.00.00</span>
+            <span class="small">.00</span>
+        </div>
+
+        <div class="buttons">
+            <button class="action-button reset-button" onclick="clearFields()">Reset</button>
+            <button class="action-button start-button" onclick="findTIME()"  onclick="doTIME()">Start</button>
+            <button class="action-button pause-button" onclick="pauseTIME()">Pause</button>
+            <button class="action-button lap-button"  onclick="addLap()" >Lap</button>
+        </div>
+
+        <div class="results">
+            <ol id="list"></ol>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
